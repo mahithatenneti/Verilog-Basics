@@ -1,0 +1,27 @@
+module testbench_16x1;
+reg [15:0]In;
+reg [3:0]Select;
+wire out;
+mux_16x1 uut (.In(In), .Select(Select), .out(out));
+initial begin
+In = 4'b0110101101101011; 
+Select = 4'b0000; #10;
+Select = 4'b0001; #10;
+Select = 4'b0010; #10;
+Select = 4'b0011; #10;
+Select = 4'b0100; #10;
+Select = 4'b0101; #10;
+Select = 4'b0110; #10;
+Select = 4'b0111; #10;
+Select = 4'b1000; #10;
+Select = 4'b1001; #10;
+Select = 4'b1010; #10;
+Select = 4'b1011; #10;
+Select = 4'b1100; #10;
+Select = 4'b1101; #10;
+Select = 4'b1110; #10;
+Select = 4'b1111; #10;
+$finish;
+
+end
+endmodule
