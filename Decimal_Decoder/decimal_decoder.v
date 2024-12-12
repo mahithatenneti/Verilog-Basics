@@ -1,3 +1,4 @@
+//For a 3-bit binary input, the decimal decoder activates one of the 8 output lines based on the binary input value.
 //Data flow Modelling
 
 module decimal_decoder( input [2:0]I, output [7:0]O);
