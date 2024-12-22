@@ -7,7 +7,7 @@ wire up_down_not,X1,X2;
 endmodule
 
 module D_flipflop( input d,clk,clear, output q,qbar);
-wire s,sbar,r,rbar,cbar,clk_not;;
+wire s,sbar,r,rbar,cbar,clk_not;
   not(cbar,clear);
   not(clk_not,clk);
   nand(sbar,rbar,s);
