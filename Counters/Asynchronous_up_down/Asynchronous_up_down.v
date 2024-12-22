@@ -24,7 +24,7 @@ xor(D,T,Q); // D = T XOR Q
 D_flipflop uut ( .d(D),.clk(clk),.clear(rst),.q(Q),.qbar(Qn));
 endmodule
 
-module aynchronous_updown(
+module asynchronous_updown(
     input clk,      // Clock signal
     input clear,
     input up_down,    // Asynchronous reset (active low) and up_down counter
