@@ -1,7 +1,8 @@
 module dff(clk,reset,d,q);
 input d,clk,reset;
 output reg q;
-always @(posedge d,posedge reset) begin
+always @(posedge d,posedge reset) 
+begin
 if(reset)
     q<=0;
 else
